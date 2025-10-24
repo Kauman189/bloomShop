@@ -3,7 +3,6 @@ import { HeroSection } from './components/hero-section'
 import { navMessages } from './components/data/navigation'
 import { heroMessages, defaultHeroLanguage } from './components/data/hero'
 import type { HeroLanguage } from './components/data/hero'
-import './App.css'
 
 function App() {
   const [language, setLanguage] = useState<HeroLanguage>(defaultHeroLanguage)
