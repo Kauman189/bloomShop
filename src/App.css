@@ -1,0 +1,73 @@
+body {
+  background-color: #fdfdfd;
+  font-family: 'Outfit', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.hero-section .hero-surface {
+  max-width: 1920px;
+  margin: 0 auto;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.08);
+}
+
+.hero-section .hero-brand {
+  letter-spacing: 0.3em;
+}
+
+.hero-section .hero-language {
+  display: inline-flex;
+  align-items: center;
+  background-color: #111;
+  border-radius: 999px;
+  padding: 0.1rem;
+  gap: 0.25rem;
+}
+
+.hero-section .hero-language__button {
+  min-width: 60px;
+  border-radius: 999px !important;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.65);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.hero-section .hero-language__button.is-active {
+  background-color: #fff;
+  color: #111;
+}
+
+.hero-section .hero-language__button:not(.is-active):hover {
+  color: #fff;
+}
+
+.hero-section .nav-link {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+}
+
+.hero-section .hero-title {
+  letter-spacing: 0.12em;
+  text-transform: capitalize;
+}
+
+.hero-section .hero-tagline {
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.hero-section .hero-search {
+  max-width: 460px;
+}
+
+.hero-section .hero-search .form-control {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.hero-section .hero-search .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
