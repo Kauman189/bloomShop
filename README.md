@@ -1,30 +1,19 @@
-# React + TypeScript + Vite
+# Wild Bloom Co. – Full-Stack Learning Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I designed the Wild Bloom Co. storefront in Figma and I am now rebuilding it end to end as a full-stack exercise. The goal is to own the entire flow: translate the visual system into React, model the data cleanly, and prepare the project for a future API layer.
 
-Currently, two official plugins are available:
+## Current Focus
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Component composition: hero with language toggle and search, catalog blocks, and the remaining sections treated as reusable modules.
+- Typed data management: keeping copy, navigation, and catalog content in TypeScript dictionaries so UI updates stay simple and multilingual support scales.
+- Styling approach: Bootstrap utilities for layout plus custom CSS to stay faithful to the Figma mockup.
+- Project structure: `src/components` for presentation, `src/data` for mock content, `src/styles/App.css` for overrides, and Vite + TypeScript as the build foundation.
 
-## Expanding the ESLint configuration
+## Next Steps
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Finish the catalog, promotions, reviews, and footer sections using the same component/data pattern.
+- Introduce interactive behaviour (search flow, filters, maybe a lightweight carousel).
+- Sketch the backend contract (products, reviews, translations) and expose it later via a small API or headless CMS.
+- Add testing and documentation so the project can evolve into a full-stack case study.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+This repository documents my journey building Wild Bloom Co. from the design draft to a production-ready full-stack project. Feedback is welcome.
