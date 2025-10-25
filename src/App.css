@@ -1,25 +1,25 @@
 body {
-  background-color: #fdfdfd;
+  background-color: #f0f4ef;
+  color: #1b1b1b;
   font-family: 'Outfit', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .hero-section .hero-surface {
-  max-width: 1920px;
+  max-width: 1160px;
   margin: 0 auto;
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.08);
-}
-
-.hero-section .hero-brand {
-  letter-spacing: 0.3em;
+  padding: 3rem 3.25rem 4rem;
+  border-radius: 40px;
+  background: linear-gradient(180deg, #bbc9a9 0%, #f0f4ef 100%);
+  box-shadow: 0 40px 60px rgba(49, 143, 92, 0.18);
 }
 
 .hero-section .hero-language {
   display: inline-flex;
   align-items: center;
-  background-color: #111;
+  gap: 0.2rem;
+  background-color: #1f1f1f;
   border-radius: 999px;
-  padding: 0.1rem;
-  gap: 0.25rem;
+  padding: 0.2rem;
 }
 
 .hero-section .hero-language__button {
@@ -27,47 +27,114 @@ body {
   border-radius: 999px !important;
   border: none;
   text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 0.1em;
+  font-weight: 600;
+  letter-spacing: 0.12em;
   background-color: transparent;
-  color: rgba(255, 255, 255, 0.65);
+  color: rgba(255, 255, 255, 0.7);
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .hero-section .hero-language__button.is-active {
   background-color: #fff;
-  color: #111;
+  color: #1f1f1f;
 }
 
 .hero-section .hero-language__button:not(.is-active):hover {
   color: #fff;
 }
 
-.hero-section .nav-link {
-  font-size: 0.85rem;
-  letter-spacing: 0.08em;
+.hero-section nav a.nav-link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: #1f1f1f;
+}
+
+.hero-section nav a.nav-link:hover,
+.hero-section nav a.nav-link:focus {
+  color: #318f5c;
 }
 
 .hero-section .hero-title {
-  letter-spacing: 0.12em;
-  text-transform: capitalize;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #1f1f1f;
 }
 
 .hero-section .hero-tagline {
-  max-width: 540px;
+  max-width: 620px;
   margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+.hero-section .hero-tagline strong,
+.hero-section .hero-tagline span {
+  color: #318f5c;
 }
 
 .hero-section .hero-search {
-  max-width: 460px;
+  max-width: 520px;
 }
 
 .hero-section .hero-search .form-control {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  border-radius: 999px 0 0 999px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background-color: #fff;
 }
 
 .hero-section .hero-search .btn {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-radius: 0 999px 999px 0;
+  background-color: #1f1f1f;
+  border-color: #1f1f1f;
+}
+
+.catalog-section {
+  background-color: #f0f4ef;
+  padding-bottom: 4rem;
+}
+
+.catalog-section .catalog-title {
+  font-size: 1.55rem;
+  letter-spacing: 0.12em;
+  color: #1f1f1f;
+}
+
+.catalog-section .catalog-view-all {
+  font-size: 0.9rem;
+  letter-spacing: 0.14em;
+  color: #1f1f1f;
+}
+
+.catalog-section .catalog-divider {
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.16);
+}
+
+.catalog-section .catalog-card {
+  min-height: 320px;
+  border-radius: 28px;
+  color: #1f1f1f;
+  background-size: cover;
+  background-position: center;
+}
+
+.catalog-section .catalog-card:nth-child(1) {
+  background-color: #bbc9a9;
+}
+
+.catalog-section .catalog-card:nth-child(2) {
+  background-color: #318f5c;
+  color: #f4f1de;
+}
+
+.catalog-section .catalog-card__headline {
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+.catalog-section .catalog-card__list li {
+  font-size: 1.15rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
 }
