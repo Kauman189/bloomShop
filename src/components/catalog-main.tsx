@@ -1,4 +1,5 @@
 import type { CatalogSectionContent } from './data/catalog'
+import { SectionHeader } from './section-header'
 
 type CatalogSectionProps = CatalogSectionContent
 
@@ -6,14 +7,9 @@ export function CatalogSection({ heading, viewAll, cards }: CatalogSectionProps)
   return (
     <section className="catalog-section py-5" id="catalog">
       <div className="container">
-        <div className="d-flex justify-content-between align-items-center mb-3">
-          <h2 className="catalog-title mb-0 text-uppercase">{heading}</h2>
-          <a href={viewAll.href} className="catalog-view-all text-uppercase fw-semibold">
-            {viewAll.label}
-          </a>
-        </div>
+        <SectionHeader title={heading} actionLabel={viewAll.label} actionHref={viewAll.href} />
 
-        <div className="catalog-divider mb-4" />
+        <div className="section-divider mb-4" />
 
         <div className="row g-4">
           {cards.map((card) => (
@@ -44,4 +40,3 @@ export function CatalogSection({ heading, viewAll, cards }: CatalogSectionProps)
     </section>
   )
 }
-export default CatalogSection
