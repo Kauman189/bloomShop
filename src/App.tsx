@@ -9,6 +9,8 @@ import { promotionMessages } from './components/data/promotion'
 import type { HeroLanguage } from './components/data/hero'
 import ReviewSection from './components/review'
 import { reviewMessages } from './components/data/review'
+import {Footer} from "./components/footer";
+import { footerMessages } from './components/data/footer'
 
 function App() {
   const [language, setLanguage] = useState<HeroLanguage>(defaultHeroLanguage)
@@ -32,6 +34,7 @@ function App() {
       {/* Reviews */}
       <ReviewSection {...reviewContent} />
       {/* Footer */}
+      <Footer {...footerMessages[language]} />
     </>
   )
 }
